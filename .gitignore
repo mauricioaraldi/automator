@@ -1,0 +1,5 @@
+*~
+Thumbs.db
+*.bak
+/profiles/*
+node_modules/

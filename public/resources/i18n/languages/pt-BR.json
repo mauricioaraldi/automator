@@ -1,0 +1,38 @@
+{
+	"add": "Adicionar",
+	"description": "Descrição",
+	"edit": "Editar",
+	"error": "Erro",
+	"errorIn": "Erro em",
+	"name": "Nome",
+	"order": "Ordem",
+	"remove": "Remover",
+	"save": "Salvar",
+	"serverConnectionError": "Erro ao se conectar com o servidor.",
+	"script": "Script",
+	"successIn": "Sucesso em",
+	"test": "Teste",
+
+	"block": {
+		"block": "Bloco",
+		"errorSaving": "Erro ao salvar bloco.",
+		"removedSuccessfully": "Bloco removido com sucesso.",
+		"savedSuccessfully": "Bloco salvo com sucesso."
+	},
+
+	"project": {
+		"errorSaving": "Erro ao salvar projeto.",
+		"project": "Projeto",
+		"removedSuccessfully": "Projeto removido com sucesso.",
+		"savedSuccessfully": "Projeto salvo com sucesso."
+	},
+
+	"test": {
+		"errorSaving": "Erro ao salvar teste.",
+		"nameRequired": "O nome é requerido.",
+		"removedSuccessfully": "Teste removido com sucesso.",
+		"savedSuccessfully": "Teste salvo com sucesso.",
+		"scriptRequired": "O script é requerido.",
+		"test": "Teste"
+	}
+}

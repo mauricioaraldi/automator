@@ -1,0 +1,320 @@
+@font-face {
+	font-family: 'Play';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../../fonts/play400.woff2);
+}
+@font-face {
+	font-family: 'Play';
+	font-style: normal;
+	font-weight: 700;
+	src: url(../../fonts/play700.woff2);
+}
+
+body {
+	font-family: Play, Times New Roman;
+}
+
+
+
+/** HEADER **/
+header {
+	text-shadow: 1px 1px 0 #0000FF;
+	background-color: #245386;
+}
+
+header > a {
+	border: 1px solid #000000;
+	box-shadow: 1px 1px 0 0 #000000;
+	color: #ffffff;
+	float: right;
+	font-size: 36pt;
+	line-height: 27px;
+	margin: 0.1em;
+	padding: 0 0.5em;
+	text-decoration: none;
+}
+
+header > a:hover {
+	background-color: #6586AA;
+}
+
+header > a:active {
+	background-color: #153150;
+	box-shadow: 1px 1px 1px 0 #000000 inset;
+	color: #cecece;
+}
+
+header > h1 {
+	color: #FAFAFA;
+	font-variant: small-caps;
+	font-size: 24pt;
+	margin: 0;
+	text-align: center;
+	text-decoration: underline;
+	letter-spacing: .3em;
+}
+/** ***** **/
+
+
+
+/** MAIN CONTAINER **/
+#test-list-container {
+	background-color: #D9EDF7;
+	bottom: 10em;
+	left: 0;
+	overflow: auto;
+	position: absolute;
+	right: 0;
+	top: 2.4em;
+}
+
+#test-list-container .btn {
+	float: right;
+	margin: 0;
+}
+/** ***** **/
+
+
+
+/** PROJECT **/
+h2 {
+	margin-left: 1em;
+	margin-right: 1em;
+}
+/** ***** **/
+
+
+
+/** BLOCK **/
+.block {
+	box-shadow: 0 0 5px 0 #245386 inset;
+	margin: 1em;
+	padding: .5em 2em;
+}
+/** ***** **/
+
+
+
+/** TEST **/
+.block > .test {
+	border-bottom: 1px solid #000000;
+	cursor: pointer;
+	padding: .5em;
+}
+
+.block > li:first-child {
+	cursor: pointer;
+	list-style-type: none;
+	margin: 0 -1em;
+	text-shadow: 1px 1px 1px #ffffff;
+}
+
+.block > li:first-child > h3 {
+	margin: .2em 0;
+}
+
+.block> .test:last-child {
+	border-bottom: none;
+}
+
+.block > .test:hover {
+	background-color: #B4E3FF;
+}
+
+.block > .test:active {
+	background-color: #245386;
+	color: #FAFAFA;
+}
+
+.testing {
+	animation-name: testing;
+	animation-duration: 700ms;
+	animation-iteration-count: infinite;
+}
+
+@keyframes testing {
+	0% {
+		background-color: inherit;
+	}
+	50% {
+		background-color: #90BFF2;
+		box-shadow: 0 0 1px 1px #888888 inset;
+	}
+	100% {
+		background-color: inherit;
+	}
+}
+/** ***** **/
+
+
+
+/** LOG **/
+#log {
+	bottom: 0;
+	height: 10em;
+	left: 0;
+	background-color: #ffffff;
+	border-top: 3px solid #000000;
+	overflow: auto;
+	position: absolute;
+	right: 0;
+}
+/** ***** **/
+
+
+
+/** STATUS **/
+#log {
+	padding: .5em;
+	text-shadow: 1px 1px 1px #FFFFFF;
+}
+
+#log > p {
+	margin: 1em 0 0;
+}
+
+.info {
+	background-color: #BDE5F8 !important;
+	border: 1px solid #0000FF !important;
+}
+.success {
+	background-color: #DFF2BF !important;
+	border: 1px solid #00FF00 !important;
+}
+.warning {
+	background-color: #FEEFB3 !important;
+	border: 1px solid #FFFF00 !important;
+}
+.error {
+	background-color: #FFBABA !important;
+	border: 1px solid #FF0000 !important;
+}
+
+.block-success > li:first-child {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dff2bf+0,dff2bf+100&1+0,0+35 */
+	background: -moz-linear-gradient(left, rgba(223,242,191,1) 0%, rgba(223,242,191,0) 35%, rgba(223,242,191,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(223,242,191,1)), color-stop(35%,rgba(223,242,191,0)), color-stop(99%,rgba(223,242,191,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, rgba(223,242,191,1) 0%,rgba(223,242,191,0) 35%,rgba(223,242,191,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, rgba(223,242,191,1) 0%,rgba(223,242,191,0) 35%,rgba(223,242,191,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, rgba(223,242,191,1) 0%,rgba(223,242,191,0) 35%,rgba(223,242,191,0) 100%); /* IE10+ */
+	background: linear-gradient(to right, rgba(223,242,191,1) 0%,rgba(223,242,191,0) 35%,rgba(223,242,191,0) 100%); /* W3C */
+}
+
+.block-error > li:first-child {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffbaba+0,ffbaba+100&1+0,0+35 */
+	background: -moz-linear-gradient(left, rgba(255,186,186,1) 0%, rgba(255,186,186,0) 35%, rgba(255,186,186,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,186,186,1)), color-stop(35%,rgba(255,186,186,0)), color-stop(100%,rgba(255,186,186,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, rgba(255,186,186,1) 0%,rgba(255,186,186,0) 35%,rgba(255,186,186,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, rgba(255,186,186,1) 0%,rgba(255,186,186,0) 35%,rgba(255,186,186,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, rgba(255,186,186,1) 0%,rgba(255,186,186,0) 35%,rgba(255,186,186,0) 100%); /* IE10+ */
+	background: linear-gradient(to right, rgba(255,186,186,1) 0%,rgba(255,186,186,0) 35%,rgba(255,186,186,0) 100%); /* W3C */
+}
+/** ***** **/
+
+
+
+/** POPUP **/
+.popup {
+	background-color: #d9edf7;
+	bottom: 6em;
+	box-shadow: 0 0 10px 2px #000;
+	display: none;
+	left: 9em;
+	position: absolute;
+	right: 9em;
+	top: 6em;
+	z-index: 10;
+}
+
+.popup .btn {
+	margin-left: 3em;
+}
+
+.popup .btn-close {
+	background-color: black;
+	color: white;
+	float: right;
+	padding: 0.5em;
+}
+/** ***** **/
+
+
+
+/** BUTTONS **/
+.btn {
+	background-color: #fefefe;
+	border: 1px solid #0000ff;
+	box-shadow: 1px 1px 0 0 #000;
+	color: #0000ff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 12pt;
+	font-weight: normal;
+	margin: .5em;
+	padding: 0.05em 0.5em;
+	text-decoration: none;
+	text-shadow: 1px 1px 0 #ffffff;
+}
+
+.btn:hover {
+	background-color: #f0f0f0;
+}
+
+.btn:active {
+	background-color: #888888;
+	box-shadow: 1px 1px 0 0 #000 inset;
+	color: #0000b2;
+	text-shadow: 1px 1px 0 #f0f0f0;
+}
+/** ***** **/
+
+
+
+/** SCREEN BLOCK **/
+.screen-block {
+	bottom: 0;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;
+}
+
+.screen-block.darken {
+	background-color: rgba(0, 0, 0, .4);
+}
+/** ***** **/
+
+
+
+/** FORMS **/
+.fr input, 
+.fr select,
+.fr textarea {
+	border-radius: 0;
+}
+
+.fr fieldset {
+	background-color: #d3dce6;
+	border: 3px double #264299;
+	margin: 1.5em 1em;
+	padding: 0.1em 2em;
+}
+
+.fr legend {
+	color: #264299;
+	margin-top: -14px;
+	text-decoration: underline;
+}
+
+.fr label {
+	display: block;
+	margin: .5em 0;
+}
+
+.fr span {
+	display: inline-block;
+	min-width: 5em;
+}
+/** ***** **/

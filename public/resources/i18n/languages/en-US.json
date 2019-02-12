@@ -1,0 +1,38 @@
+{
+	"add": "Add",
+	"description": "Description",
+	"edit": "Edit",
+	"error": "Error",
+	"errorIn": "Error in",
+	"name": "Name",
+	"order": "Order",
+	"remove": "Remove",
+	"save": "Save",
+	"serverConnectionError": "Error trying to connect to server.",
+	"script": "Script",
+	"successIn": "Success in",
+	"test": "Test",
+
+	"block": {
+		"block": "Block",
+		"errorSaving": "Error trying to save block.",
+		"removedSuccessfully": "Block successfully removed.",
+		"savedSuccessfully": "Block saved successfully."
+	},
+
+	"project": {
+		"errorSaving": "Error trying to save project.",
+		"project": "Project",
+		"removedSuccessfully": "Project successfully removed.",
+		"savedSuccessfully": "Project saved successfully."
+	},
+
+	"test": {
+		"errorSaving": "Error trying to save test.",
+		"nameRequired": "Name is required.",
+		"removedSuccessfully": "Test successfully removed.",
+		"savedSuccessfully": "Test saved successfully.",
+		"scriptRequired": "Script is required.",
+		"test": "Test"
+	}
+}

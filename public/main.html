@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Automator</title>
+
+		<!-- **********************************************************
+		***************************************************************
+		** Automator, tests and tasks automations
+		**
+		** A project by Mauricio Araldi
+		**
+		** All rights reserved (CC). 
+		** Do not redistribute without authorization.
+		** This project is under GNU General Public License 3.0
+		***************************************************************
+		*********************************************************** -->
+
+		<!-- JS APIs -->
+		<script src="resources/js/api/jquery-3.1.1.min.js"></script>
+
+		<!-- JS CUSTOM -->
+		<script src="resources/js/custom/app.js"></script>
+		<script src="resources/js/custom/modules/logger.js"></script>
+		<script src="resources/js/custom/modules/test.js"></script>
+		<script src="resources/js/custom/modules/project.js"></script>
+		<script src="resources/js/custom/modules/block.js"></script>
+
+		<!-- JS OBJECTS -->
+		<script src="resources/js/objects/Project.js"></script>
+		<script src="resources/js/objects/Block.js"></script>
+		<script src="resources/js/objects/Test.js"></script>
+
+		<!-- CSS APIs -->
+		<link rel="stylesheet" href="resources/css/api/clearfix.css"></link>
+		<link rel="stylesheet" href="resources/css/api/normalize.css"></link>
+
+		<!-- CSS CUSTOM -->
+		<link rel="stylesheet" href="resources/css/custom/index.css"></link>
+
+		<!-- FULL APIs -->
+		<!-- i18n -->
+		<script src="resources/i18n/i18n.js"></script>
+
+		<!-- Noty -->
+		<script src="resources/js/api/noty/jquery.noty.js"></script>
+		<script src="resources/js/api/noty/layouts/bottom.js"></script>
+		<script src="resources/js/api/noty/layouts/bottomCenter.js"></script>
+		<script src="resources/js/api/noty/layouts/center.js"></script>
+		<script src="resources/js/api/noty/themes/default.js"></script>
+	</head>
+	<body>
+		<header>
+			<a id="open-save-test" href="#">+</a>
+			<h1>&nbsp;&nbsp;Automator&nbsp;</h1>
+		</header>
+
+		<div id="test-list-container"></div>
+
+		<div id="log"></div>
+
+		<div id="popup-test-informations" class="popup fr">
+			<a id="close-save-test" class="btn-close" href="#">X</a>
+
+			<input id="test-id" type="hidden"/>
+
+			<fieldset>
+				<legend data-i18n="project.project"></legend>
+
+				<label>
+					<select id="test-project"></select>
+					<a class="btn open-save-project" href="#" data-i18n="add"></a>
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<legend data-i18n="block.block"></legend>
+
+				<label>
+					<select id="test-block"></select>
+					<a id="open-save-block" class="btn" href="#" data-i18n="add"></a>
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<legend data-i18n="test.test"></legend>
+
+				<label>
+					<span data-i18n="name"></span>
+					<input id="test-name"></input>
+				</label>
+				<label>
+					<span data-i18n="description"></span>
+					<textarea id="test-description"></textarea>
+				</label>
+				<label>
+					<span data-i18n="script"></span>
+					<input id="test-script" type="file"></select>
+				</label>
+				<label>
+					<span data-i18n="order"></span>
+					<input id="test-order" type="number"></input>
+				</label>
+				<a id="save-test" class="btn" href="#" data-i18n="save"></a>
+			</fieldset>
+		</div>
+
+		<div id="popup-block-informations" class="popup fr">
+			<a id="close-save-block" class="btn-close" href="#">X</a>
+			<fieldset>
+				<legend data-i18n="block.block"></legend>
+				<input id="block-id" type="hidden"/>
+
+				<label>
+					<span data-i18n="project.project"></span>
+					<select id="block-project"></select>
+				</label>
+				<label>
+					<span data-i18n="name"></span>
+					<input id="block-name"></input>
+				</label>
+				<a id="save-block" class="btn" href="#" data-i18n="save"></a>
+			</fieldset>
+		</div>
+
+		<div id="popup-project-informations" class="popup fr">
+			<a id="close-save-project" class="btn-close" href="#">X</a>
+
+			<fieldset>
+				<legend data-i18n="project.project"></legend>
+				<input id="project-id" type="hidden"/>
+
+				<label>
+					<span data-i18n="name"></span>
+					<input id="project-name"></input>
+				</label>
+				<a id="save-project" class="btn" href="#" data-i18n="save"></a>
+			</fieldset>
+		</div>
+	<body>
+</html>

@@ -1,0 +1,26 @@
+{
+	"name": "Automator",
+	"description": "Tests and tasks automations with Selenium",
+	"version": "0.3.0",
+	"keywords": ["tests", "tasks", "automatic"],
+	"homepage": "https://github.com/mauricioaraldi/automator",
+	"main": "app/app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": {
+		"name": "Mauricio Araldi",
+		"url": "https://github.com/mauricioaraldi"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"repository": {
+		"type" : "git",
+		"url" : "https://github.com/mauricioaraldi/automator.git"
+	},
+	"dependencies": {
+		"body-parser": "^1.15.2",
+		"express": "^4.14.0",
+		"mongodb": "^2.2.11",
+		"selenium-webdriver": "^3.0.1"
+	}
+}
